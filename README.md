@@ -3,7 +3,7 @@
 后标题和简介有上下淡出和左右淡出两种效果。
 
 ###演示地址：
-1.[点击这里](http://huahua2.github.io/pageslide)<br />
+1.[点击这里](http://huahua2.github.io/PageSlide)<br />
 
 ###效果截图：
 ![image](https://github.com/huahua2/PageSlide/blob/d36ab38a2f393ad149415217797bdbbaca420bc2/img/1.png) 
