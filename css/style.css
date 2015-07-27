@@ -85,7 +85,7 @@ body{
     
     /* margin-top: -110px;*/
      transform:translateY(-50%) rotate(45deg);
-
+    -webkit-transform:translateY(-50%) rotate(45deg);
    
 }
 
