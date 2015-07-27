@@ -82,34 +82,25 @@ body{
 	text-align:center;
      background: #318fc5;
      margin: 0 auto;
-     font-size: 70px;
-	 color: #fff;
-     top: 50%;
-     margin-top: -110px;
-     transform:rotate(45deg);
+    
+    /* margin-top: -110px;*/
+     transform:translateY(-50%) rotate(45deg);
 
    
 }
-.bg{
-	 background: #318fc5;
-}
-.bg .ficon{
-	 background: #fff;
-	  color: #318fc5;
-}
 
 
-div[data-icon]:after {
+[data-icon]:after {
 	content: attr(data-icon);
 	font-family: 'RaphaelIcons';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
+	 font-size: 90px;
+	 color: #fff;
 	display: block;
-	 padding-top: 65px;
-     padding-left: 44px;
-	transform:rotate(-45deg);
+	transform:rotate(-45deg) translateY(50px) ;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -177,4 +168,88 @@ div[data-icon]:after {
  #radio_5:checked ~ .panel-scroll {
  transform: translateY(-400%);
 	-webkit-transform: translateY(-400%);	
+}
+
+.panel h2{
+
+	text-align: center;
+   font-size: 54px;
+	font-weight: 900;
+	color: #318fc5;
+	margin-top: -50px;
+	text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
+	-webkit-backface-visibility: hidden;
+}
+.panel p{
+	font-size: 20px;
+	color: #666
+}
+
+.panel p{
+	width: 50%;
+	margin: 0 auto;
+	}
+
+	.bg{
+	 background: #318fc5;
+}
+.bg .ficon{
+	 background: #fff;
+}
+.bg [data-icon]:after{
+	  color: #318fc5;
+}
+.bg h2{
+	color: #fff;
+}
+.bg p{
+	color: #fff;
+}
+.panel-scroll #panel1 h2,
+#radio_1:checked ~ .panel-scroll #panel1 h2,
+#radio_2:checked ~ .panel-scroll #panel2 h2,
+#radio_3:checked ~ .panel-scroll #panel3 h2,
+#radio_4:checked ~ .panel-scroll #panel4 h2,
+#radio_5:checked ~ .panel-scroll #panel5 h2 {
+	-webkit-animation: movedown 0.8s ease-in-out 0.21s backwards;
+	-o-animation: movedown 0.8s ease-in-out 0.21s backwards;
+	animation: movedown 0.8s ease-in-out 0.21s backwards;
+	}
+
+.panel-scroll #panel1 p,
+#radio_1:checked ~ .panel-scroll #panel1 p,
+#radio_2:checked ~ .panel-scroll #panel2 p,
+#radio_3:checked ~ .panel-scroll #panel3 p,
+#radio_4:checked ~ .panel-scroll #panel4 p,
+#radio_5:checked ~ .panel-scroll #panel5 p {
+	-webkit-animation: moveup 0.8s ease-in-out 0.21s ;
+	-o-animation: moveup 0.8s ease-in-out 0.21s;
+	animation: moveup 0.8s ease-in-out 0.21s;
+	}
+@-webkit-keyframes movedown{
+
+    0%{
+        -webkit-transform:translateY(-40px);
+       opacity: 0;
+    }
+
+    100%{
+       -webkit-transform:translateY(0px);
+       opacity: 1;
+    }
+
+}
+
+@-webkit-keyframes moveup{
+
+    0%{
+        -webkit-transform:translateY(40px);
+       opacity: 0;
+    }
+
+    100%{
+       -webkit-transform:translateY(0px);
+       opacity: 1;
+    }
+
 }
