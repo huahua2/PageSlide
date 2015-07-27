@@ -205,26 +205,33 @@ body{
 .bg p{
 	color: #fff;
 }
-.panel-scroll #panel1 h2,
 #radio_1:checked ~ .panel-scroll #panel1 h2,
-#radio_2:checked ~ .panel-scroll #panel2 h2,
 #radio_3:checked ~ .panel-scroll #panel3 h2,
-#radio_4:checked ~ .panel-scroll #panel4 h2,
-#radio_5:checked ~ .panel-scroll #panel5 h2 {
-	-webkit-animation: movedown 0.8s ease-in-out 0.21s backwards;
-	-o-animation: movedown 0.8s ease-in-out 0.21s backwards;
-	animation: movedown 0.8s ease-in-out 0.21s backwards;
+#radio_5:checked ~ .panel-scroll #panel5 h2{
+	-webkit-animation: movedown 0.8s ease-in-out 0.21s both;
+	-o-animation: movedown 0.8s ease-in-out 0.21s both;
+	animation: movedown 0.8s ease-in-out 0.21s both;
+	}
+#radio_2:checked ~ .panel-scroll #panel2 h2,
+#radio_4:checked ~ .panel-scroll #panel4 h2
+	 {
+-webkit-animation:bounceInRight 2s ease 0s 1 both;
+
 	}
 
-.panel-scroll #panel1 p,
 #radio_1:checked ~ .panel-scroll #panel1 p,
-#radio_2:checked ~ .panel-scroll #panel2 p,
 #radio_3:checked ~ .panel-scroll #panel3 p,
-#radio_4:checked ~ .panel-scroll #panel4 p,
 #radio_5:checked ~ .panel-scroll #panel5 p {
 	-webkit-animation: moveup 0.8s ease-in-out 0.21s ;
 	-o-animation: moveup 0.8s ease-in-out 0.21s;
 	animation: moveup 0.8s ease-in-out 0.21s;
+	}
+	#radio_2:checked ~ .panel-scroll #panel2 p,
+#radio_4:checked ~ .panel-scroll #panel4 p
+	 {
+	-webkit-animation:   bounceInLeft 2s ease 0s 1 both;
+	-o-animation:    bounceInLeft 2s ease 0s 1 both;
+	animation:    bounceInLeft 2s ease 0s 1 both;
 	}
 @-webkit-keyframes movedown{
 
@@ -236,9 +243,13 @@ body{
     100%{
        -webkit-transform:translateY(0px);
        opacity: 1;
+         -webkit-transform: none;
+        transform: none
+       animation-name:none;
     }
 
 }
+
 
 @-webkit-keyframes moveup{
 
@@ -250,6 +261,79 @@ body{
     100%{
        -webkit-transform:translateY(0px);
        opacity: 1;
+         -webkit-transform: none;
+        transform: none;
+       animation-name:none;
     }
 
+}
+
+
+@-webkit-keyframes bounceInLeft {
+    0%,60%,75%,90%,100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215,.610,.355,1.000);
+        transition-timing-function: cubic-bezier(0.215,.610,.355,1.000)
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px,0,0);
+        transform: translate3d(-3000px,0,0)
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px,0,0);
+        transform: translate3d(25px,0,0)
+    }
+
+    75% {
+        -webkit-transform: translate3d(-10px,0,0);
+        transform: translate3d(-10px,0,0)
+    }
+
+    90% {
+        -webkit-transform: translate3d(5px,0,0);
+        transform: translate3d(5px,0,0)
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+
+@-webkit-keyframes bounceInRight {
+    0%,60%,75%,90%,100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215,.610,.355,1.000);
+        transition-timing-function: cubic-bezier(0.215,.610,.355,1.000)
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(3000px,0,0);
+        transform: translate3d(3000px,0,0)
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(-25px,0,0);
+        transform: translate3d(-25px,0,0)
+    }
+
+    75% {
+        -webkit-transform: translate3d(10px,0,0);
+        transform: translate3d(10px,0,0)
+    }
+
+    90% {
+        -webkit-transform: translate3d(-5px,0,0);
+        transform: translate3d(-5px,0,0)
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none
+    }
 }
