@@ -85,6 +85,7 @@ body{
     /* margin-top: -110px;*/
      transform:translateY(-50%) rotate(45deg);
     -webkit-transform:translateY(-50%) rotate(45deg);
+
 }
 
 [data-icon]:after {
@@ -200,6 +201,7 @@ body{
 	.bg h2{
 		color: #fff;
 	}
+
 	.bg p{
 		color: #fff;
 	}
