@@ -81,6 +81,7 @@ body{
 	line-height: 220px;
 	text-align:center;
 <<<<<<< HEAD
+<<<<<<< HEAD
      background: #318fc5;
      margin: 0 auto;
     
@@ -89,6 +90,8 @@ body{
     -webkit-transform:translateY(-50%) rotate(45deg);
    
 =======
+=======
+>>>>>>> origin/master
 	background: #318fc5;
 	margin: 0 auto;
 	
@@ -96,6 +99,9 @@ body{
 	transform:translateY(-50%) rotate(45deg);
 	-webkit-transform:translateY(-50%) rotate(45deg);
 	
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 }
 
