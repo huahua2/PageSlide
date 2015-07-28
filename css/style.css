@@ -85,13 +85,8 @@ body{
     /* margin-top: -110px;*/
      transform:translateY(-50%) rotate(45deg);
     -webkit-transform:translateY(-50%) rotate(45deg);
-	background: #318fc5;
-	margin: 0 auto;
-	
-	/* margin-top: -110px;*/
-	transform:translateY(-50%) rotate(45deg);
-	-webkit-transform:translateY(-50%) rotate(45deg);
-	
+}
+
 [data-icon]:after {
 	content: attr(data-icon);
 	font-family: 'RaphaelIcons';
