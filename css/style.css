@@ -80,14 +80,15 @@ body{
 	height: 220px;
 	line-height: 220px;
 	text-align:center;
-
-     background: #318fc5;
-     margin: 0 auto;  
-    /* margin-top: -110px;*/
-     transform:translateY(-50%) rotate(45deg);
-    -webkit-transform:translateY(-50%) rotate(45deg);
-
+	background: #318fc5;
+	margin: 0 auto;
+	
+	/* margin-top: -110px;*/
+	transform:translateY(-50%) rotate(45deg);
+	-webkit-transform:translateY(-50%) rotate(45deg);
+	
 }
+
 
 [data-icon]:after {
 	content: attr(data-icon);
@@ -192,7 +193,6 @@ body{
 
 	.bg{
 		background: #318fc5;
-
 	}
 	.bg .ficon{
 		background: #fff;
@@ -200,7 +200,6 @@ body{
 	.bg [data-icon]:after{
 		color: #318fc5;
 	}
-
 	.bg h2{
 		color: #fff;
 	}
@@ -231,9 +230,7 @@ body{
 	{
 		-webkit-animation:   bounceInLeft 2s ease 0s 1 both;
 		animation:    bounceInLeft 2s ease 0s 1 both;
-
 	}
-	
 	@-webkit-keyframes movedown{
 
 		0%{
@@ -251,6 +248,7 @@ body{
 		}
 
 	}
+
 
 	@-webkit-keyframes moveup{
 
