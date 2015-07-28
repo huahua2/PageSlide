@@ -80,21 +80,11 @@ body{
 	height: 220px;
 	line-height: 220px;
 	text-align:center;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
      background: #318fc5;
-     margin: 0 auto;
-    
+     margin: 0 auto;  
     /* margin-top: -110px;*/
      transform:translateY(-50%) rotate(45deg);
     -webkit-transform:translateY(-50%) rotate(45deg);
-   
-=======
-=======
->>>>>>> origin/master
-=======
->>>>>>> origin/master
 	background: #318fc5;
 	margin: 0 auto;
 	
@@ -102,16 +92,6 @@ body{
 	transform:translateY(-50%) rotate(45deg);
 	-webkit-transform:translateY(-50%) rotate(45deg);
 	
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
-=======
->>>>>>> origin/master
-}
-
-
 [data-icon]:after {
 	content: attr(data-icon);
 	font-family: 'RaphaelIcons';
